@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 
-MODEL_PATH = Path(__file__).resolve().parent / "superkart_sales_pipeline.joblib"
+MODEL_PATH = Path(__file__).resolve().parent / "SuperKart_prediction_model_v1_0.joblib"
 
 st.set_page_config(page_title="SuperKart Sales Predictor", page_icon="🛒")
 st.title("🛒 SuperKart Sales Predictor")
