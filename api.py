@@ -5,13 +5,13 @@ import pandas as pd
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-MODEL_PATH = Path(__file__).resolve().parent / "superkart_sales_pipeline.joblib"
+MODEL_PATH = Path(__file__).resolve().parent / "SuperKart_prediction_model_v1_0.joblib"
 model = joblib.load(MODEL_PATH)
 
 
 @app.get("/health")
 def health():
-    return jsonify({"status": "ok", "model": "superkart_sales_pipeline"})
+    return jsonify({"status": "ok", "model": "SuperKart_prediction_model_v1_0"})
 
 
 @app.post("/v1/predict")
